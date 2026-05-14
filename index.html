@@ -77,8 +77,8 @@ footer{text-align:center;padding:30px;background:#000;margin-top:50px}
 <section class="hero" id="home">
 <h1>Premium Thumbnail Design<br>Make Them Stop Scrolling.</h1>
 <p>I create high-impact YouTube thumbnails with strong hooks, bold composition and a premium visual system built for serious creators.</p>
-<button class="btn">View Work</button>
-<button class="btn">Book a Project</button>
+<button class="btn" onclick="scrollToSection('work')">View Work</button>
+<button class="btn" onclick="scrollToSection('contact')">Book a Project</button>
 </section>
 
 <!-- WORK -->
@@ -161,17 +161,39 @@ ans.style.display=ans.style.display=="block"?"none":"block";
 })
 
 
-// WHATSAPP FORM
+<script>
+// FAQ TOGGLE
+document.querySelectorAll(".faq-item").forEach(item=>{
+item.addEventListener("click",()=>{
+let ans=item.querySelector(".answer");
+ans.style.display=ans.style.display=="block"?"none":"block";
+})
+})
+
+// ⭐ Smooth scroll for buttons
+function scrollToSection(id){
+document.getElementById(id).scrollIntoView({
+behavior: "smooth"
+});
+}
+
+// ⭐ WhatsApp form sender
 function sendToWhatsApp(){
 let channel=document.getElementById("channel").value;
 let email=document.getElementById("email").value;
 let message=document.getElementById("message").value;
+
+if(channel=="" || email=="" || message==""){
+alert("Please fill all fields first 🙂");
+return;
+}
 
 let text = `New Thumbnail Inquiry 🚀%0A%0AChannel Name: ${channel}%0AEmail: ${email}%0AMessage: ${message}`;
 let phone="919959619465";
 
 window.open(`https://wa.me/${phone}?text=${text}`,'_blank');
 }
+
 
   
 </script>
