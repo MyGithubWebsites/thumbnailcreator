@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdullah Designs | Thumbnail Designer</title>
+<title>Nagma Designs | Thumbnail Designer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -61,7 +61,7 @@ footer{text-align:center;padding:30px;background:#000;margin-top:50px}
 <body>
 
 <nav>
-<div><b>ABDULLAH DESIGNS</b></div>
+<div><b>NAGMA DESIGNS</b></div>
 <div>
 <a href="#home">Home</a>
 <a href="#work">Work</a>
@@ -85,10 +85,10 @@ footer{text-align:center;padding:30px;background:#000;margin-top:50px}
 <section id="work">
 <h2 class="section-title">Featured Thumbnails</h2>
 <div class="grid">
-<div class="thumb"><img src="thumb1.jpg"></div>
-<div class="thumb"><img src="thumb2.jpg"></div>
-<div class="thumb"><img src="thumb3.jpg"></div>
-<div class="thumb"><img src="thumb4.jpg"></div>
+<div class="thumb"><img src="thumb1.jpeg"></div>
+<div class="thumb"><img src="thumb2.jpeg"></div>
+<div class="thumb"><img src="thumb3.jpeg"></div>
+<div class="thumb"><img src="thumb4.jpeg"></div>
 </div>
 </section>
 
@@ -96,18 +96,16 @@ footer{text-align:center;padding:30px;background:#000;margin-top:50px}
 <section id="reviews">
 <h2 class="section-title">Trusted by Creators</h2>
 
-<div class="review">★★★★★ Jack Pembrook — "Clean, sharp, professional thumbnails that improved clicks."</div>
-<div class="review">★★★★★ Sabri Suby — "Strong from the first version. Premium feel."</div>
-<div class="review">★★★★★ TechSource — "Polished and click-worthy thumbnail."</div>
-<div class="review">★★★★★ Liam Ottley — "Bold and clear design."</div>
-<div class="review">★★★★★ Tdawgsmitty — "Professional and high quality."</div>
-<div class="review">★★★★★ Solazzo — "Fast and nailed the vibe."</div>
+<div class="review">★★★★★ Adnan Lokhandwala — "Clean, sharp, professional thumbnails that improved clicks."</div>
+<div class="review">★★★★★ Rishabh Bajpai — "Strong from the first version. Premium feel."</div>
+<div class="review">★★★★★ Tech Sources — "Polished and click-worthy thumbnail."</div>
+<div class="review">★★★★★ Alex — "Bold and clear design."</div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
 <h2 class="section-title">Elevate Your Channel's Visual Identity</h2>
-<p>Generated 150M+ impressions • Proven CTR increases • 20+ satisfied creators worldwide</p>
+<p>Generated 1M+ impressions • Proven CTR increases • 10+ satisfied creators worldwide</p>
 </section>
 
 <!-- PROCESS -->
@@ -142,10 +140,15 @@ footer{text-align:center;padding:30px;background:#000;margin-top:50px}
 <input placeholder="Your Email">
 <textarea placeholder="Your Message"></textarea>
 <button class="btn">Submit</button>
-</section>
 
+
+  <div class="contact-info">
+<p>Email: <b>tiuser677@gmail.com</b></p>
+<p>WhatsApp: <b>+91 9959619465</b></p>
+</div>
+ </section> 
 <footer>
-© 2026 Abdullah Designs — Premium YouTube Thumbnail Design
+© 2026 Nagma Designs — Premium YouTube Thumbnail Design
 </footer>
 
 <script>
@@ -156,6 +159,21 @@ let ans=item.querySelector(".answer");
 ans.style.display=ans.style.display=="block"?"none":"block";
 })
 })
+
+
+// WHATSAPP FORM
+function sendToWhatsApp(){
+let channel=document.getElementById("channel").value;
+let email=document.getElementById("email").value;
+let message=document.getElementById("message").value;
+
+let text = `New Thumbnail Inquiry 🚀%0A%0AChannel Name: ${channel}%0AEmail: ${email}%0AMessage: ${message}`;
+let phone="919959619465";
+
+window.open(`https://wa.me/${phone}?text=${text}`,'_blank');
+}
+
+  
 </script>
 
 </body>
