@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdullah Designs | Thumbnail Designer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins;}
+body{background:#0b0b0b;color:#fff;scroll-behavior:smooth}
+
+/* NAV */
+nav{
+position:fixed;width:100%;top:0;left:0;background:#000;
+display:flex;justify-content:space-between;padding:20px 10%;
+z-index:999;border-bottom:1px solid #222
+}
+nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:600}
+nav a:hover{color:#f5b800}
+
+/* HERO */
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;
+align-items:center;text-align:center;padding:0 15%}
+.hero h1{font-size:60px;font-weight:800}
+.hero p{color:#bbb;margin:20px 0;max-width:700px}
+.btn{padding:15px 30px;background:#f5b800;border:none;color:#000;
+font-weight:700;margin:10px;cursor:pointer;border-radius:5px}
+
+/* SECTION */
+section{padding:100px 10%}
+.section-title{font-size:40px;margin-bottom:40px}
+
+/* WORK */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.thumb{overflow:hidden;border-radius:10px}
+.thumb img{width:100%;transition:.4s}
+.thumb:hover img{transform:scale(1.08)}
+
+/* REVIEWS */
+.review{background:#111;padding:25px;border-radius:10px;margin-bottom:20px}
+
+/* PROCESS */
+.process{display:flex;gap:30px;flex-wrap:wrap}
+.card{background:#111;padding:30px;border-radius:10px;flex:1;min-width:250px}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid #222;padding:15px 0;cursor:pointer}
+.answer{display:none;color:#aaa;margin-top:10px}
+
+/* CONTACT */
+input,textarea{
+width:100%;padding:15px;margin:10px 0;background:#111;border:1px solid #333;color:#fff
+}
+
+footer{text-align:center;padding:30px;background:#000;margin-top:50px}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div><b>ABDULLAH DESIGNS</b></div>
+<div>
+<a href="#home">Home</a>
+<a href="#work">Work</a>
+<a href="#reviews">Reviews</a>
+<a href="#about">About</a>
+<a href="#process">Process</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<h1>Premium Thumbnail Design<br>Make Them Stop Scrolling.</h1>
+<p>I create high-impact YouTube thumbnails with strong hooks, bold composition and a premium visual system built for serious creators.</p>
+<button class="btn">View Work</button>
+<button class="btn">Book a Project</button>
+</section>
+
+<!-- WORK -->
+<section id="work">
+<h2 class="section-title">Featured Thumbnails</h2>
+<div class="grid">
+<div class="thumb"><img src="thumb1.jpg"></div>
+<div class="thumb"><img src="thumb2.jpg"></div>
+<div class="thumb"><img src="thumb3.jpg"></div>
+<div class="thumb"><img src="thumb4.jpg"></div>
+</div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+<h2 class="section-title">Trusted by Creators</h2>
+
+<div class="review">★★★★★ Jack Pembrook — "Clean, sharp, professional thumbnails that improved clicks."</div>
+<div class="review">★★★★★ Sabri Suby — "Strong from the first version. Premium feel."</div>
+<div class="review">★★★★★ TechSource — "Polished and click-worthy thumbnail."</div>
+<div class="review">★★★★★ Liam Ottley — "Bold and clear design."</div>
+<div class="review">★★★★★ Tdawgsmitty — "Professional and high quality."</div>
+<div class="review">★★★★★ Solazzo — "Fast and nailed the vibe."</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">Elevate Your Channel's Visual Identity</h2>
+<p>Generated 150M+ impressions • Proven CTR increases • 20+ satisfied creators worldwide</p>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+<h2 class="section-title">A Strategic Design Process</h2>
+<div class="process">
+<div class="card"><h3>Strategy Consultation</h3><p>We discuss video goals and audience strategy.</p></div>
+<div class="card"><h3>Conceptualization</h3><p>I develop visual hooks and sketches.</p></div>
+<div class="card"><h3>Final Production</h3><p>High contrast, readability and premium look.</p></div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+<h2 class="section-title">Common Questions</h2>
+
+<div class="faq-item">How fast can I get a thumbnail?
+<div class="answer">Most thumbnails are delivered within 24-48 hours.</div></div>
+
+<div class="faq-item">What do you need from me?
+<div class="answer">Video title, idea/script and channel link.</div></div>
+
+<div class="faq-item">Do you provide revisions?
+<div class="answer">Yes. Small revisions included.</div></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="section-title">Ready for Better Thumbnails?</h2>
+
+<input placeholder="Channel Name">
+<input placeholder="Your Email">
+<textarea placeholder="Your Message"></textarea>
+<button class="btn">Submit</button>
+</section>
+
+<footer>
+© 2026 Abdullah Designs — Premium YouTube Thumbnail Design
+</footer>
+
+<script>
+// FAQ TOGGLE
+document.querySelectorAll(".faq-item").forEach(item=>{
+item.addEventListener("click",()=>{
+let ans=item.querySelector(".answer");
+ans.style.display=ans.style.display=="block"?"none":"block";
+})
+})
+</script>
+
+</body>
+</html>
